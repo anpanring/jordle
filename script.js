@@ -4180,7 +4180,7 @@ const guessGrid = document.querySelector("[data-guess-grid]");
 const offsetFromDate = new Date(2022, 0, 1);
 const msOffset = Date.now() - offsetFromDate;
 const dayOffset = msOffset / 1000/ 60 / 60 / 24;
-const targetWord = "おたまや"
+const targetWord = "せんせい"
 console.log(dayOffset);
 const WORD_LENGTH = 4;
 const FLIP_ANIMATION_DURATION = 500;
