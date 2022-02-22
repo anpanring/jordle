@@ -4254,7 +4254,7 @@ function deleteKey() {
 function submitGuess() {
     const activeTiles = [...getActiveTiles()];
     if(activeTiles.length !== WORD_LENGTH) {
-        showAlert("Not enough letters");
+        showAlert("文字が足りないです");
         shakeTiles(activeTiles);
         return;
     }
@@ -4264,7 +4264,7 @@ function submitGuess() {
     }, "");
     
     if(!dictionary.includes(guess)) {
-        showAlert("Not in word list");
+        showAlert("単語ではないです");
         shakeTiles(activeTiles);
         return;
     }
@@ -4333,7 +4333,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
     if(guess === targetWord) {
-        showAlert("You Win", 5000);
+        showAlert("正解!!", 5000);
         danceTiles(tiles);
         stopInteraction();
         return;
@@ -4341,7 +4341,7 @@ function checkWinLose(guess, tiles) {
 
     const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])");
     if(remainingTiles.length === 0) {
-        showAlert("正解は’" + targetWord.toUpperCase() + "’でした", null);
+        showAlert("正解は " + targetWord.toUpperCase() + " でした", null);
         stopInteraction();
     }
 }
