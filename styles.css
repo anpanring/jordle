@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 1em;
     font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+    font-family: 'PT Mono', monospace;
 }
 
 .keyboard {
@@ -79,7 +80,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(4, 4em);
+    grid-template-columns: repeat(3, 4em);
     grid-template-rows: repeat(6, 4em);
     gap: .25em;
     margin-bottom: 1em;

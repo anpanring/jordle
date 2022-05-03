@@ -4182,7 +4182,7 @@ const msOffset = Date.now() - offsetFromDate;
 const dayOffset = msOffset / 1000/ 60 / 60 / 24;
 const targetWord = "たいふう"
 console.log(dayOffset);
-const WORD_LENGTH = 4;
+const WORD_LENGTH = 3;
 const FLIP_ANIMATION_DURATION = 500;
 const DANCE_ANIMATION_DURATION = 500;
 
@@ -4227,10 +4227,10 @@ function handleKeyPress(e) {
         return;
     }
 
-    if(e.key.match(/^[a-z]$/)) {
+    /*if(e.key.match(/^[a-z]$/)) {
         pressKey(e.key);
         return;
-    }
+    }*/
 }
 
 function pressKey(key) {
